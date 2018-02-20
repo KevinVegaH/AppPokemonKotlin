@@ -3,4 +3,8 @@
     <string name="_1_vs_1">1 Vs 1</string>
     <string name="_1_vs_bot">1 vs Bot</string>
     <string name="mainImage">Main image</string>
+    <string name="pelear">PELEAR</string>
+    <string name="todo">TODO</string>
+    <string name="seleccionar">SELECCIONAR</string>
+    <string name="textview">TextView</string>
 </resources>
