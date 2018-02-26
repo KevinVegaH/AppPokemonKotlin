@@ -4,10 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ceisutb14.apppokemonkotlin.Main2Activity">
+    android:background="@mipmap/select"
+    tools:context="com.example.ceisutb14.apppokemonkotlin.controller.VsActivity">
 
 
+    <ImageView
+        android:id="@+id/pokeImage"
+        android:layout_width="182dp"
+        android:layout_height="186dp"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/pokeball" />
 
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="233dp"
+        android:layout_height="158dp"
+        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pokeImage">
 
+        <Button
+            android:id="@+id/selec_poke"
+            android:layout_width="167dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_plano"
+            android:text="Seleccionar"
+            app:layout_constraintBottom_toTopOf="@+id/btn_pelea"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_pelea"
+            android:layout_width="167dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_plano"
+            android:text="Pelear"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selec_poke" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/pokeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="73dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="40dp"
+        android:text="hola"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

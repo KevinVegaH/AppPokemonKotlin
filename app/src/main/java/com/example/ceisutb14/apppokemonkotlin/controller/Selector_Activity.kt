@@ -1,7 +1,8 @@
-package com.example.ceisutb14.apppokemonkotlin
+package com.example.ceisutb14.apppokemonkotlin.controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.ceisutb14.apppokemonkotlin.R
 
 class Selector_Activity : AppCompatActivity() {
 
