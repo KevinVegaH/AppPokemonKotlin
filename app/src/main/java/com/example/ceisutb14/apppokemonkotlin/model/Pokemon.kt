@@ -16,6 +16,7 @@ class Pokemon {
 
     private var name: String? = null
     private var front_default_url: String? = null
+    private var back_default_url: String? = null
     private var info_Sprites: JSONObject? = null
 
     private var image: JSONObject? = null
@@ -59,5 +60,24 @@ class Pokemon {
 
         return front_default_url
     }
+    fun getImage_Back(info: JSONObject): String? {
+
+        var pkm= Pokemon()
+        image = pkm.getSprites(info)
+
+        try {
+
+            back_default_url = image!!.getString("back_default")
+
+
+        } catch (e: JSONException) {
+
+            e.printStackTrace()
+
+        }
+
+        return back_default_url
+    }
+
 
 }

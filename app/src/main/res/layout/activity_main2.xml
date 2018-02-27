@@ -4,32 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/select"
+    android:background="@android:color/holo_orange_light"
     tools:context="com.example.ceisutb14.apppokemonkotlin.controller.VsActivity">
 
 
     <ImageView
         android:id="@+id/pokeImage"
-        android:layout_width="182dp"
-        android:layout_height="186dp"
-        android:layout_marginBottom="27dp"
+        android:layout_width="213dp"
+        android:layout_height="215dp"
+        android:layout_marginBottom="9dp"
         android:layout_marginEnd="101dp"
         android:layout_marginStart="101dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="19dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/pokeball" />
+        app:layout_constraintTop_toBottomOf="@+id/pokeName"
+        app:srcCompat="@mipmap/pokeball3" />
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout3"
         android:layout_width="233dp"
         android:layout_height="158dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginBottom="65dp"
         android:layout_marginEnd="41dp"
         android:layout_marginStart="41dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="9dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
@@ -71,16 +71,17 @@
 
     <TextView
         android:id="@+id/pokeName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="209dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="19dp"
         android:layout_marginEnd="73dp"
         android:layout_marginStart="73dp"
-        android:layout_marginTop="40dp"
-        android:text="hola"
+        android:layout_marginTop="59dp"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textColor="@android:color/background_light"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/pokeImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
