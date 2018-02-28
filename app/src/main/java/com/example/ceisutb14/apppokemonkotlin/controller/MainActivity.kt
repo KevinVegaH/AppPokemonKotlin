@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btn_vs.setOnClickListener{
+        btn_vs_bot.setOnClickListener{
 
             val boton_vs = Intent(this, VsActivity::class.java)
             startActivity(boton_vs)

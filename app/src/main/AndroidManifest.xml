@@ -21,12 +21,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".controller.Selector_Activity" />
+
         <activity
             android:name=".controller.VsActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".controller.List_pokemon" />
-        <activity android:name=".controller.FightActivity"></activity>
+
+        <activity android:name=".controller.FightActivity" android:screenOrientation="portrait" />
     </application>
 
 </manifest>

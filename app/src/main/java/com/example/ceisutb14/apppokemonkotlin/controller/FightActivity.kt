@@ -20,7 +20,11 @@ class FightActivity : AppCompatActivity() {
         var poke_img_front = intent.extras.getString("Img_Front")
         var poke_img_back = intent.extras.getString("Img_Back")
 
-        Glide.with(contexto).load(poke_img_front).into(pokemonEnemy)
+        var poke_name2 = intent.extras.getString("Poke_name2")
+        var poke_img_front2 = intent.extras.getString("Img_Front2")
+        var poke_img_back2 = intent.extras.getString("Img_Back2")
+
+        Glide.with(contexto).load(poke_img_front2).into(pokemonEnemy)
         Glide.with(contexto).load(poke_img_back).into(pokemonPlay)
 
         //println("Here in new View!: "+ poke_img_front)

@@ -87,6 +87,7 @@
             android:layout_marginEnd="15dp"
             android:layout_marginStart="18dp"
             android:layout_marginTop="16dp"
+            android:background="@android:color/background_light"
             android:text="InfoBatalla"
             android:textColor="@android:color/black"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -95,5 +96,45 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
     </android.support.constraint.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="127dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="312dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="189dp"
+        android:max="100"
+        android:progress="100"
+        android:progressTint="@android:color/holo_red_dark"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pokemonEnemy"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="127dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="79dp"
+        android:max="100"
+        android:progress="100"
+        android:progressTint="@android:color/holo_red_dark"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/pokemonEnemy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523"
+        tools:visibility="visible" />
 
 </android.support.constraint.ConstraintLayout>
