@@ -16,6 +16,7 @@ import kotlinx.android.synthetic.main.activity_main2.*
 import com.bumptech.glide.Glide;
 import com.example.ceisutb14.apppokemonkotlin.R.layout.activity_main2
 import android.content.Intent
+import android.widget.Toast
 import com.example.ceisutb14.apppokemonkotlin.model.PokeData
 
 
@@ -98,6 +99,8 @@ class VsActivity : AppCompatActivity() {
 
         }, Response.ErrorListener {
             // TODO Auto-generated method stub
+            Toast.makeText(this," Ups, no hay conexion.",
+                    Toast.LENGTH_LONG).show()
         })
 
 
@@ -123,6 +126,8 @@ class VsActivity : AppCompatActivity() {
 
         }, Response.ErrorListener {
             // TODO Auto-generated method stub
+            Toast.makeText(this," Ups, no hay conexion.",
+                    Toast.LENGTH_LONG).show()
         })
 
 
