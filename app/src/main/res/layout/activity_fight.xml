@@ -7,6 +7,138 @@
     android:background="@mipmap/arena"
     tools:context="com.example.ceisutb14.apppokemonkotlin.controller.FightActivity">
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="149dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="356dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pokemonEnemy"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="149dp"
+            android:layout_height="77dp"
+            android:layout_marginBottom="356dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pokemonEnemy"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/vida1"
+                android:layout_width="32dp"
+                android:layout_height="27dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:text="100"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/pokename"
+                android:layout_width="87dp"
+                android:layout_height="24dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="9dp"
+                android:text="pokename"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/progressBar2"
+                app:layout_constraintEnd_toStartOf="@+id/vida1"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="129dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
+                android:max="100"
+                android:progress="100"
+                android:progressTint="@android:color/holo_red_dark"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.888"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vida1"
+                app:layout_constraintVertical_bias="1.0"
+                tools:visibility="visible" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/vida1"
+            android:layout_width="32dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:text="100"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pokename"
+            android:layout_width="87dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="9dp"
+            android:text="pokename"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/progressBar2"
+            app:layout_constraintEnd_toStartOf="@+id/vida1"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="129dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:max="100"
+            android:progress="100"
+            android:progressTint="@android:color/holo_red_dark"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vida1"
+            app:layout_constraintVertical_bias="1.0"
+            tools:visibility="visible" />
+
+    </android.support.constraint.ConstraintLayout>
+
     <ImageView
         android:id="@+id/pokemonEnemy"
         android:layout_width="153dp"
@@ -96,45 +228,5 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
     </android.support.constraint.ConstraintLayout>
-
-    <ProgressBar
-        android:id="@+id/progressBar2"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="127dp"
-        android:layout_height="66dp"
-        android:layout_marginBottom="312dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="189dp"
-        android:max="100"
-        android:progress="100"
-        android:progressTint="@android:color/holo_red_dark"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/pokemonEnemy"
-        app:layout_constraintHorizontal_bias="0.375"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="visible" />
-
-    <ProgressBar
-        android:id="@+id/progressBar3"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="127dp"
-        android:layout_height="66dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="79dp"
-        android:max="100"
-        android:progress="100"
-        android:progressTint="@android:color/holo_red_dark"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/pokemonEnemy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.966"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523"
-        tools:visibility="visible" />
 
 </android.support.constraint.ConstraintLayout>
